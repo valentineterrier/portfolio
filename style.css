@@ -1,0 +1,36 @@
+/* TYPOGRAPHIE */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font family */
+body{
+	font-family: "Public Sans", sans-serif;
+}
+
+/* font size */
+:root{
+	--size-XXL: 64px;
+	--size-XL: 32px;
+	--size-L: 20px;
+	--size-M: 16px;
+	--size-S: 13px;
+}
+
+p{ font-size: var(--size-M); }
+h1{ font-size: var(--size-XXL); }
+
+/* font weight */
+:root{
+	--weight-light: 275;
+	--weight-regular: 348;
+	--weight-bold: 599;
+}
+
+h1{ font-weight: var(--weight-light); }
+
+
+/* COULEURS */
+:root{
+	--Couleurs-Principle: #ff8800;
+}
+
+h1{ color: var(--Couleurs-Principle); }
