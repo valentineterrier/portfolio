@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 /* TYPOGRAPHIE */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -25,8 +27,9 @@ h1{ font-size: var(--size-XXL); }
 	--weight-bold: 599;
 }
 
-h1{ font-weight: var(--weight-light); }
-
+h1 { font-weight: var(--weight-light); }
+body, p { font-weight: var(--weight-regular);}
+b, strong, h6, h5, h4, h3, h2 { font-weight: var(--weight-bold);}
 
 /* COULEURS */
 :root{
@@ -34,3 +37,9 @@ h1{ font-weight: var(--weight-light); }
 }
 
 h1{ color: var(--Couleurs-Principle); }
+
+
+
+
+
+section{min-height: 100vh;}
