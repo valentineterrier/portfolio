@@ -38,8 +38,10 @@ b, strong, h6, h5, h4, h3, h2 { font-weight: var(--weight-bold);}
 
 h1{ color: var(--Couleurs-Principle); }
 
-
-
-
-
 section{min-height: 100vh;}
+
+/* MISE EN PAGE */
+
+/* taille des vigette */
+section{ min-height: 100vh;}
+.vigette { max-width: 256px;}

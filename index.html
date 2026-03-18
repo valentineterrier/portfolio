@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Valentine Terrier - Portfolio</title>
+
+	<link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,20 +21,20 @@
 	<section id="Graphisme">
 		<h2>Graphisme</h2>
 	
-	<a href="images/Portfolio_affiche_tulipe_big.jpg">
-		<img src="images/Portfolio_affiche_tulipe_web.jpg">
+	<a href="images/Portfolio_affiche_tulipe_big.jpg" data-lightbox="Graphisme">
+		<img class="vignette" src="images/Portfolio_affiche_tulipe_web.jpg">
 	</a>
 
-	<a href="images/Portfolio_NIFFF_big.jpg">
-		<img src="images/Portfolio_NIFFF_web.jpg">
+	<a href="images/Portfolio_NIFFF_big.jpg" data-lightbox="Graphisme">
+		<img class="vignette" src="images/Portfolio_NIFFF_web.jpg">
 	</a>
 
-	<a href="images/Portfolio_PublicoText-01_big.jpg">
-		<img src="images/Portfolio_PublicoText-01_web.jpg">
+	<a href="images/Portfolio_PublicoText-01_big.jpg" data-lightbox="Graphisme">
+		<img class="vignette" src="images/Portfolio_PublicoText-01_web.jpg">
 	</a>
 
-	<a href="images/Portfolio_workshop-02_big.jpg">
-		<img src="images/Portfolio_workshop-02_web.jpg">
+	<a href="images/Portfolio_workshop-02_big.jpg" data-lightbox="Graphisme">
+		<img class="vignette" src="images/Portfolio_workshop-02_web.jpg">
 	</a>
 
 	</section>
@@ -45,5 +47,23 @@
 		<h2>Illustrations</h2>
 	</section>
 	
+	<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+	<script>
+		lightbox.option({
+			'resizeDuration': 50,
+			'fadeDuration': 50,
+			'imageFadeDuration': 0,
+			'showImageNumberLabel': false,
+			'toujoursAfficherNavSurLesAppareilsTouch': true,
+			'wrapAround': true
+			}) </script>
+
+	<style>
+		:root{
+			--lb-image-border-width: 0px;
+			--lb-border-radius: 0px;
+		}
+	</style>
+
 </body>
 </html>
