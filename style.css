@@ -1,6 +1,6 @@
 @import url(reset.css);
-
-/* TYPOGRAPHIE */
+/*///////////////////////////////////*/
+/*// TYPOGRAPHIE //////////////////*/
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font family */
@@ -31,17 +31,58 @@ h1 { font-weight: var(--weight-light); }
 body, p { font-weight: var(--weight-regular);}
 b, strong, h6, h5, h4, h3, h2 { font-weight: var(--weight-bold);}
 
-/* COULEURS */
+/*///////////////////////////////////*/
+/*// COULEURS //////////////////*/
 :root{
-	--Couleurs-Principle: #ff8800;
+	--Couleurs-Principle: darkblue;
 }
 
 h1{ color: var(--Couleurs-Principle); }
+a { color: var(--Couleurs-Principle); }
 
 section{min-height: 100vh;}
 
-/* MISE EN PAGE */
+/*///////////////////////////////////*/
+/*// DECO //////////////////*/
+a { text-decoration: none;}
+
+section {
+	border-top: 1.5px solid var(--Couleurs-Principle); }
+
+/*///////////////////////////////////*/
+/*// MISE EN PAGE //////////////////*/
+:root { --spacer: 2rem; }
+
+.row { display: flex; gap: var(--spacer); }
+.row > * {flex: 1; }
+
+body { padding: var(--spacer); }
+
+header { min-height: 50vh; }
 
 /* taille des vigette */
-section{ min-height: 100vh;}
-.vigette { max-width: 256px;}
+section{
+	min-height: 100vh;
+	margin-top: calc( var(--spacer) * 3 );
+}
+
+section {
+	display: flex;
+	gap: var(--spacer);
+	flex-wrap: wrap;
+}
+
+section > h2 { flex: 0 0 100%; }
+section > a { flex: 0 1 256px; }
+
+section .vignettes {
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
+
+/* .vigette { max-width: 256px;} */
+
+/*///////////////////////////////////*/
+/*// UI //////////////////*/
+html, body {
+	scroll-behavior: smooth;}
