@@ -18,13 +18,35 @@
 				<p> I am the best. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, id eum rerum veniam ex quidem a nostrum mollitia voluptatibus voluptate tempora fuga recusandae odio molestias perspiciatis deleniti sit qui doloremque? </p>
 			</div>
 		</div>
+		
+		<script type="text/javascript" language="javascript">
+		<!--
+		// Email obfuscator script 2.1 by Tim Williams, University of Arizona
+		// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+		// This code is freeware provided these four comment lines remain intact
+		// A wizard to generate this code is at http://www.jottings.com/obfuscator/
+		{ coded = "EP4nFN1Fn.Nnbb1nb@nDvEPvD.wS"
+		key = "90SQzBVEHi36Wu8JLmXbUa5doNcnpqljkGgsh1KR7vyOfZIMxPCD2rwFAY4tTe"
+		shift=coded.length
+		link=""
+		for (i=0; i<coded.length; i++) {
+		if (key.indexOf(coded.charAt(i))==-1) {
+		ltr = coded.charAt(i)
+		link += (ltr)}
+		else { ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+		link += (key.charAt(ltr))}}
+		document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+		}
+		//-->
+		</script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
-		<nav>
+	</header>
+
+	<nav>
 			<a href="#Graphisme">Graphisme</a>
 			<a href="#Photos">Photos</a>
 			<a href="#Illustrations">Illustrations</a>
 		</nav>
-	</header>
 
 	<section id="Graphisme">
 		<h2>Graphisme</h2>

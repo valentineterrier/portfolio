@@ -86,3 +86,18 @@ section .vignettes {
 /*// UI //////////////////*/
 html, body {
 	scroll-behavior: smooth;}
+
+nav {
+	position: sticky;
+	top: 0;
+	background: #ffffff;
+	padding: 0.5rem 0;
+	}
+
+h2 {
+	position: sticky;
+	top: 2rem;
+	background: #ffff;
+	padding: 0.5rem 0;
+
+}
