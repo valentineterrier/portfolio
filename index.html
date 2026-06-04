@@ -7,8 +7,12 @@
 
 	<link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
 	<link rel="stylesheet" href="style.css">
-</head>
 
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
 	<body>
 		<header id="header">
 			<h1 class="logo">Valentine Terrier</h1>
@@ -27,63 +31,71 @@
 
 		<div class="overlay" id="overlay">
 			<nav>
-					<a href="#portfolio">Work</a>
+					<a href="work.html">Work</a>
 					<a href="about.html">About</a>
 					<a href="#contact">Contact</a>
 				</nav>
 		</div>
+		
+		<section class="slider">
+			<div class="myslider">
+				<div>
+					<img id="project tulipe"
+					src="images/Portfolio_affiche_tulipe_big.jpg" alt="project tulipe">
+				</div>
+				<div>
+					<img id="project nifff"
+					src="images/Portfolio_affiche_NIFFF_big.jpg" alt="project nifff">
+				</div>
+				<div>
+					<img id="project etml"
+					src="images/Portfolio_affiche_ETML_big.jpg" alt="project etml">
+				</div>
+				<div>
+					<img id="project publico"
+					src="images/Portfolio_Publico_big.jpg" alt="project publico">
+				</div>
+				<div>
+					<img id="project charmettes"
+					src="images/Portfolio_logo_Charmettes_big.jpg" alt="project charmettes">
+				</div>
+				<div>
+					<img id="project fishchips"
+					src="images/Portfolio_logo_FishandChips_big.jpg" alt="project fishchips">
+				</div>
+			</div>
 
-	<section id="portfolio">
-
-		<div class="project">
-			<img src="images/Portfolio_affiche_tulipe_big.jpg" alt="project tulipe">
-		</div>
-
-		<div class="project">
-			<img src="images/Portfolio_affiche_NIFFF_big.jpg" alt="project nifff">
-		</div>
-
-		<div class="project">
-			<img src="images/Portfolio_affiche_ETML_big.jpg" alt="project etml">
-		</div>
-
-		<div class="project">
-			<img src="images/Portfolio_Publico_big.jpg" alt="project publico">
-		</div>
+			<script type="text/javascript" >
+				$(document).ready(function(){
+					$('.myslider').slick({
+						slidesToShow: 1,
+					});
+				});
+			</script>
+		</section>
 
 
-		<div class="project charmettes">
-			<img src="images/Portfolio_logo_Charmettes_big.jpg" alt="project charmettes">
-		</div>
 
-		<div class="project fishchips">
-			<img src="images/Portfolio_logo_FishandChips_big.jpg" alt="project fishchips">
-		</div>
 
-	</section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 	<footer id="contact">
 		give me ur money
 	</footer>
-	
-	<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
-	<script>
-		lightbox.option({
-			'resizeDuration': 50,
-			'fadeDuration': 50,
-			'imageFadeDuration': 0,
-			'showImageNumberLabel': false,
-			'toujoursAfficherNavSurLesAppareilsTouch': true,
-			'wrapAround': true
-			}) </script>
-
-	<style>
-		:root{
-			--lb-image-border-width: 0px;
-			--lb-border-radius: 0px;
-		}
-	</style>
-
 <script src="script.js"></script>
 </body>
 </html>

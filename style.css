@@ -45,12 +45,12 @@ header{
 	position:relative;
 	z-index:1001;
 
-	}
+}
 
 header > *{
 	position:relative;
 	z-index:1002;
-	}
+}
 
 /* INFOS AU CENTRE */
 .infos{
@@ -69,7 +69,7 @@ header > *{
 .logo,
 .infos{
 	transition:.3s ease;
-	}
+}
 
 /* MENU OUVERT */
 header.active .logo,
@@ -132,7 +132,7 @@ header.active .infos{
 	visibility:hidden;
 	transition:.4s ease;
 	z-index:999;
-	}
+}
 
 /* menu texte */
 .overlay nav{
@@ -140,37 +140,128 @@ header.active .infos{
 	flex-direction:column;
 	gap:25px;
 	text-align:center;
-	}
+}
 
 .overlay a{
 	color:white;
 	text-decoration:none;
 	font-size:var(--size-XXL);
 	font-weight:400;
-	}
+}
 
 /* SURVOL → ouvrir menu */
 .overlay.active{
 	opacity:1;
 	visibility:visible;
-	}
+}
 
 /* Burger → croix blanche */
 .burger.active span{
 	background:white;
-	}
+}
 
 .burger.active span:nth-child(1){
 	transform:rotate(45deg) translate(6px,6px);
-	}
+}
 
 .burger.active span:nth-child(2){
 	opacity:0;
-	}
+}
 
 .burger.active span:nth-child(3){
 	transform:rotate(-45deg) translate(6px,-6px);
-	}
+}
+
+/*///////////////////////////////////*/
+/*// HOME PAGE //////////////////*/
+.slider{
+	position:relative;
+	width:calc(100% + 60px);
+	margin-left:-30px;
+	margin-right:-30px;
+}
+
+.slider img{
+	width:100%;
+	display:block;
+	height:auto;
+}
+
+.arrow{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	background:none;
+	border:none;
+	font-size:60px;
+	cursor:pointer;
+	z-index:10;
+}
+
+button.slick-prev.slick-arrow {
+	background: transparent !important;
+	border: none !important;
+	color: transparent;
+}
+
+button.slick-prev.slick-arrow:after {
+	content: "←";
+	display: block;
+	color: black !important;
+	font-size: 2em;
+	width: 40px;
+	height: 40px;
+	top: calc(50% - 20px);
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+button.slick-next.slick-arrow {
+	background: transparent !important;
+	border: none !important;
+	color: transparent;
+}
+
+button.slick-next.slick-arrow:after {
+	content: "→";
+	display: block;
+	color: black !important;
+	font-size: 2em;
+	width: 40px;
+	height: 40px;
+	top: calc(50% - 20px);
+	right: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+	background: transparent !important;
+	border: none !important;
+	color: transparent;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.slider:hover button.slick-prev.slick-arrow,
+.slider:hover button.slick-next.slick-arrow {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* GRILLE PORTFOLIO */
 #portfolio{
