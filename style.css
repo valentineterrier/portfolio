@@ -10,7 +10,11 @@ body{
 	font-family: "Public Sans", sans-serif;
 	background:white;
 	margin:0;
-	padding: 30px;}
+	padding: 0px;}
+
+.page{
+	padding: 30px;
+}
 
 /* font size */
 :root{
@@ -35,7 +39,7 @@ h1{font-size: var(--size-XL); font-weight: 550;}
 }
 
 /*///////////////////////////////////*/
-/*// HEADER/ NAVIGATION //////////////////*/
+/*// NAVIGATION //////////////////*/
 header{
 	display:grid;
 	grid-template-columns:1fr auto 1fr;
@@ -71,13 +75,12 @@ header > *{
 	transition:.3s ease;
 }
 
-/* MENU OUVERT */
+/* BURGER MENU */
 header.active .logo,
 header.active .infos{
 	color:white;
 }
 
-/* BOUTON BURGER MENU */
 /* burger normal */
 .burger{
 	justify-self:end;
@@ -90,7 +93,7 @@ header.active .infos{
 	gap:7px;
 }
 
-/* LES LIGNES */
+/* les lignes */
 .burger span{
 	width:30px;
 	height:2px;
@@ -149,13 +152,13 @@ header.active .infos{
 	font-weight:400;
 }
 
-/* SURVOL → ouvrir menu */
+/* survol → ouvrir menu */
 .overlay.active{
 	opacity:1;
 	visibility:visible;
 }
 
-/* Burger → croix blanche */
+/* burger → croix blanche */
 .burger.active span{
 	background:white;
 }
@@ -174,6 +177,7 @@ header.active .infos{
 
 /*///////////////////////////////////*/
 /*// HOME PAGE //////////////////*/
+/* slider project */
 .slider{
 	position:relative;
 	width:calc(100% + 60px);
@@ -208,11 +212,12 @@ button.slick-prev.slick-arrow:after {
 	content: "←";
 	display: block;
 	color: black !important;
-	font-size: 2em;
+	font-size: 32px;
+	font-weight: 250;
 	width: 40px;
 	height: 40px;
-	top: calc(50% - 20px);
-	left: 0;
+	top: calc(40% - 20px);
+	left: 30px;
 	position: absolute;
 	z-index: 1;
 }
@@ -227,11 +232,12 @@ button.slick-next.slick-arrow:after {
 	content: "→";
 	display: block;
 	color: black !important;
-	font-size: 2em;
+	font-size: 32px;
+	font-weight: 250;
 	width: 40px;
 	height: 40px;
-	top: calc(50% - 20px);
-	right: 0;
+	top: calc(40% - 20px);
+	right: 30px;
 	position: absolute;
 	z-index: 1;
 }
@@ -250,27 +256,16 @@ button.slick-next.slick-arrow {
 	opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* GRILLE PORTFOLIO */
+/*///////////////////////////////////*/
+/*// WORK PAGE //////////////////*/
+/* grille project */
 #portfolio{
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	gap:20px;
 }
 
-/* IMAGES */
+/* images */
 .project img{
 	width:100%;
 	display:block;
@@ -279,7 +274,53 @@ button.slick-next.slick-arrow {
 /*///////////////////////////////////*/
 /*// FOOTER //////////////////*/
 
-/* header, #portfolio, footer{
-	min-height: 80vh;
-} */
+#contact{
+	width: calc(100% + 60px);
+	margin-left: -30px;
+	margin-right: -30px;
+	background: black;
+	padding: 10px;
+}
 
+.footer-bottom{
+	margin-top: 100px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.home #contact {
+	margin-top: 0;
+}
+
+.work #portfolio {
+	padding-bottom: 200px;
+}
+
+#contact h3 {
+	margin: 0;
+	color: white;
+	font-size: var(--size-M);
+	font-weight: normal;
+}
+
+.footer-inner {
+	padding: 30px;
+}
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-links {
+	display: flex;
+	gap: 30px;
+}
+
+.footer-links a,
+.footer-bottom > a {
+	color: #777;
+	text-decoration: none;
+	font-size: var(--size-M);
+}
