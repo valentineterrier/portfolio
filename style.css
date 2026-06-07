@@ -25,8 +25,9 @@ body{
 	--size-S: 13px;
 }
 
-p{ font-size: var(--size-M); font-weight: 400;} /* Regular */
-h1{font-size: var(--size-XL); font-weight: 550;}
+p{ font-size: var(--size-M); font-weight: 400;}  /* Text courant */
+h1{font-size: var(--size-XL); font-weight: 550;} /* Logo */
+h2{font-size: var(--size-L); font-weight: 500;} /* Titre des projects */
 
 /*///////////////////////////////////*/
 /*// GRAPHISME //////////////////*/
@@ -178,6 +179,15 @@ header.active .infos{
 /*///////////////////////////////////*/
 /*// HOME PAGE //////////////////*/
 /* slider project */
+
+.slider {
+	outline: 3px solid red;
+}
+
+#contact {
+	outline: 3px solid blue;
+}
+
 .slider{
 	position:relative;
 	width:calc(100% + 60px);
@@ -269,6 +279,13 @@ button.slick-next.slick-arrow {
 .project img{
 	width:100%;
 	display:block;
+}
+
+/* pages par project */
+h2{
+	font-family: "Public Sans", sans-serif;
+	font-size: var(--size-L);
+	font-weight: 500;
 }
 
 /*///////////////////////////////////*/
