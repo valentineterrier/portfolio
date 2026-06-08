@@ -18,7 +18,7 @@ body{
 
 /* font size */
 :root{
-	--size-XXL: 64px;
+	--size-XXL: 48px;
 	--size-XL: 32px;
 	--size-L: 20px;
 	--size-M: 16px;
@@ -26,8 +26,8 @@ body{
 }
 
 p{ font-size: var(--size-M); font-weight: 400;}  /* Text courant */
-h1{font-size: var(--size-XL); font-weight: 550;} /* Logo */
-h2{font-size: var(--size-L); font-weight: 500;} /* Titre des projects */
+h1{font-size: var(--size-XXL); font-weight: 550;} /* Logo */
+h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
 
 /*///////////////////////////////////*/
 /*// GRAPHISME //////////////////*/
@@ -284,7 +284,7 @@ button.slick-next.slick-arrow {
 /* pages par project */
 h2{
 	font-family: "Public Sans", sans-serif;
-	font-size: var(--size-L);
+	font-size: var(--size-XL);
 	font-weight: 500;
 }
 
