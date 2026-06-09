@@ -180,14 +180,6 @@ header.active .infos{
 /*// HOME PAGE //////////////////*/
 /* slider project */
 
-.slider {
-	outline: 3px solid red;
-}
-
-#contact {
-	outline: 3px solid blue;
-}
-
 .slider{
 	position:relative;
 	width:calc(100% + 60px);
