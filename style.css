@@ -188,9 +188,9 @@ header.active .infos{
 }
 
 .slider img{
-	width:100%;
-	display:block;
-	height:auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .arrow{
