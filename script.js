@@ -1,4 +1,52 @@
 
+/* curseur */
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+window.addEventListener("mousemove", (e) => {
+	dot.style.left = e.clientX + "px";
+	dot.style.top = e.clientY + "px";
+
+	ring.style.left = e.clientX + "px";
+	ring.style.top = e.clientY + "px";
+});
+
+const interactiveElements = document.querySelectorAll("a, button");
+
+interactiveElements.forEach(element => {
+
+    element.addEventListener("mouseenter", () => {
+        dot.classList.add("hover");
+    });
+
+    element.addEventListener("mouseleave", () => {
+        dot.classList.remove("hover");
+    });
+
+});
+
+
+
+
+
+/* scroll */
+const lenis = new Lenis({
+    duration: 1.5,
+    wheelMultiplier: 0.9,
+    touchMultiplier: 1.2
+});
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+
+
+
+
 /* date et heures */
 function updateInfos(){
 const now = new Date();

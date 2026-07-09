@@ -26,7 +26,7 @@ body{
 }
 
 p{ font-size: var(--size-M); font-weight: 400;}  /* Text courant */
-h1{font-size: var(--size-XXL); font-weight: 550;} /* Logo */
+h1{font-size: var(--size-XL); font-weight: 450;} /* Logo */
 h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
 
 /*///////////////////////////////////*/
@@ -38,6 +38,38 @@ h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
 	padding:0;
 	box-sizing:border-box;
 }
+
+/*///////////////////////////////////*/
+/*// CURSEUR //////////////////*/
+
+.cursor-dot {
+    width: 14px;
+    height: 14px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+
+    transition:
+        width .25s ease,
+        height .25s ease,
+        background-color .25s ease;
+}
+
+body {
+    cursor: none;
+}
+
+.cursor-dot.hover {
+    width: 20px;
+    height: 20px;
+    background: black;
+}
+
 
 /*///////////////////////////////////*/
 /*// NAVIGATION //////////////////*/
