@@ -8,11 +8,15 @@
 /* font family */
 body{
 	font-family: "Public Sans", sans-serif;
-	background:white;
-	margin:0;
-	padding: 0px;}
+	background: white;
+	margin: 0;
+	cursor: none;
+}
 
 .page{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	padding: 30px;
 }
 
@@ -58,10 +62,6 @@ h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
         width .25s ease,
         height .25s ease,
         background-color .25s ease;
-}
-
-body {
-    cursor: none;
 }
 
 .cursor-dot.hover {
@@ -314,6 +314,60 @@ h2{
 	font-size: var(--size-XL);
 	font-weight: 500;
 }
+
+.project{
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay-project{
+	position:absolute;
+	inset:0;
+	background:#c5c5c5;
+	opacity:0;
+	transition:.35s ease;
+	padding:20px;
+	display:flex;
+	align-items:flex-start;
+}
+
+.overlay-project h3{
+	color:black;
+	font-size:32px;
+	font-weight:500;
+}
+
+.project:hover .overlay-project{
+	opacity:1;
+}
+
+/*///////////////////////////////////*/
+/*// ABOUT PAGE //////////////////*/
+.about{
+	flex: 1;
+	display: grid;
+	grid-template-columns: 170px 700px;
+	column-gap: 70px;
+	margin-top: 70px;
+	align-items: start;
+}
+
+.about h2{
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.about p{
+	max-width: 700px;
+	font-size: 18px;
+	line-height: 1.45;
+	margin: 0;
+}
+
+
+
+
+
 
 /*///////////////////////////////////*/
 /*// FOOTER //////////////////*/

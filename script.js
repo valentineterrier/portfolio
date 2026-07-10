@@ -26,9 +26,6 @@ interactiveElements.forEach(element => {
 });
 
 
-
-
-
 /* scroll */
 const lenis = new Lenis({
     duration: 1.5,
