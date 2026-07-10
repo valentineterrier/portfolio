@@ -32,6 +32,12 @@ body{
 p{ font-size: var(--size-M); font-weight: 400;}  /* Text courant */
 h1{font-size: var(--size-XL); font-weight: 450;} /* Logo */
 h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
+h3{font-size: var(--size-L); font-weight: 600;} /* Text overlay */
+
+/* couleur */
+:root{
+	--couleur-principale: #43fc15;
+}
 
 /*///////////////////////////////////*/
 /*// GRAPHISME //////////////////*/
@@ -47,29 +53,28 @@ h2{font-size: var(--size-XL); font-weight: 500;} /* Titre des projects */
 /*// CURSEUR //////////////////*/
 
 .cursor-dot {
-    width: 14px;
-    height: 14px;
-    background: #c5c5c5;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
+	width: 14px;
+	height: 14px;
+	background: var(--couleur-principale);
+	border-radius: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 9999;
+	transform: translate(-50%, -50%);
 
-    transition:
-        width .25s ease,
-        height .25s ease,
-        background-color .25s ease;
+	transition:
+	width .25s ease,
+	height .25s ease,
+	background-color .25s ease;
 }
 
 .cursor-dot.hover {
-    width: 20px;
-    height: 20px;
-    background: black;
+	width: 20px;
+	height: 20px;
+	background: black;
 }
-
 
 /*///////////////////////////////////*/
 /*// NAVIGATION //////////////////*/
@@ -214,7 +219,7 @@ header.active .infos{
 
 .slider{
 	height: calc(100vh - 100px);
-	background-color: #bbe1bb; /* ton vert */
+	background-color: #bbe1bb; /* mon vert */
 	overflow: hidden;
 	position:relative;
 	margin-left:-30px;
@@ -310,7 +315,6 @@ button.slick-next.slick-arrow {
 
 /* pages par project */
 h2{
-	font-family: "Public Sans", sans-serif;
 	font-size: var(--size-XL);
 	font-weight: 500;
 }
@@ -323,7 +327,7 @@ h2{
 .overlay-project{
 	position:absolute;
 	inset:0;
-	background:#c5c5c5;
+	background:var(--couleur-principale);
 	opacity:0;
 	transition:.35s ease;
 	padding:20px;
@@ -333,7 +337,7 @@ h2{
 
 .overlay-project h3{
 	color:black;
-	font-size:32px;
+	font-size:px;
 	font-weight:500;
 }
 
@@ -353,7 +357,7 @@ h2{
 }
 
 .about h2{
-	font-size: 32px;
+	font-size: var(--size-XL);
 	font-weight: 500;
 }
 
@@ -364,11 +368,6 @@ h2{
 	margin: 0;
 }
 
-
-
-
-
-
 /*///////////////////////////////////*/
 /*// FOOTER //////////////////*/
 
@@ -376,7 +375,7 @@ h2{
 	width: calc(100% + 60px);
 	margin-left: -30px;
 	margin-right: -30px;
-	background: black;
+	/* background: black; */
 	padding: 10px;
 }
 
@@ -397,8 +396,8 @@ h2{
 
 #contact h3 {
 	margin: 0;
-	color: white;
-	font-size: var(--size-M);
+	color: black;
+	font-size: var(--size-L);
 	font-weight: normal;
 }
 
@@ -418,7 +417,7 @@ h2{
 
 .footer-links a,
 .footer-bottom > a {
-	color: #777;
+	color: black;
 	text-decoration: none;
-	font-size: var(--size-M);
+	font-size: var(--size-L);
 }
