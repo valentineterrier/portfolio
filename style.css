@@ -22,8 +22,8 @@ body{
 
 /* font size */
 :root{
-	--size-XXL: 48px;
-	--size-XL: 32px;
+	--size-XXL: 95px;
+	--size-XL: 25px;
 	--size-L: 20px;
 	--size-M: 16px;
 	--size-S: 13px;
@@ -187,7 +187,7 @@ header.active .infos{
 	color:white;
 	text-decoration:none;
 	font-size:var(--size-XXL);
-	font-weight:400;
+	font-weight:600;
 }
 
 /* survol → ouvrir menu */
@@ -343,6 +343,52 @@ h2{
 
 .project:hover .overlay-project{
 	opacity:1;
+}
+
+/*///////////////////////////////////*/
+/*// PAGE PROJETS //////////////////*/
+.project-intro{
+	margin-top: 5px;
+	margin-bottom: 70px;
+}
+
+.project-title h2{
+	margin-bottom: var(--size-XL);
+}
+
+.project-tags{
+	display:flex;
+	gap:20px;
+}
+
+.project-content{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	gap:80px;
+	align-items:start;
+}
+
+.project-image img{
+	width:50%;
+	display:block;
+}
+
+.project-info h3{
+	font-size: var(--size-M);
+	font-weight: 700; /* Bold */
+	margin-bottom: var(--size-M);
+}
+
+.project-info p{
+	font-size: var(--size-M);
+	font-weight: 400; /* Regular */
+	line-height: 1.6;
+	margin-bottom: var(--size-L);
+}
+
+.project-info p{
+	margin-bottom:22px;
+	line-height:1.6;
 }
 
 /*///////////////////////////////////*/
