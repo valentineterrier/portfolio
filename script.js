@@ -26,6 +26,7 @@ interactiveElements.forEach(element => {
 });
 
 
+
 /* scroll */
 const lenis = new Lenis({
     duration: 1.5,
@@ -39,8 +40,6 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
-
-
 
 
 
@@ -68,7 +67,6 @@ setInterval(updateInfos,1000);
 
 
 
-
 /* meun burger */
 const burger = document.getElementById("burger");
 const overlay = document.getElementById("overlay");
@@ -89,3 +87,18 @@ const header = document.getElementById("header");
 		overlay.classList.remove("active");
 		header.classList.remove("active");
 	});
+
+
+/* read more/read less */
+const button = document.getElementById("toggleText");
+const moreText = document.querySelector(".more-text");
+
+button.addEventListener("click", () => {
+	moreText.classList.toggle("open");
+
+	if(moreText.classList.contains("open")){
+button.textContent = "Read less ✕";
+	} else {
+		button.textContent = "Read more +";
+	}
+});
