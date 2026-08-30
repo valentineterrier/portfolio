@@ -89,15 +89,18 @@ const header = document.getElementById("header");
 	});
 
 
+
+
 /* read more/read less */
 const button = document.getElementById("toggleText");
 const moreText = document.querySelector(".more-text");
 
 button.addEventListener("click", () => {
 	moreText.classList.toggle("open");
+	button.classList.toggle("open");
 
 	if(moreText.classList.contains("open")){
-button.textContent = "Read less ✕";
+		button.textContent = "Read less ✕";
 	} else {
 		button.textContent = "Read more +";
 	}

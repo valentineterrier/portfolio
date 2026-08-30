@@ -392,9 +392,13 @@ h2{
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: opacity .2s ease;
-	margin-top: 1rem; /* espace avant le bouton */
+	transition: color .2s ease, opacity .2s ease;
+	margin-top: 1rem;
 	display: block;
+}
+
+.read-more.open {
+	color: #888888;
 }
 
 .project-intro{
