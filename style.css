@@ -114,6 +114,15 @@ header > *{
 	transition:.3s ease;
 }
 
+.logo a {
+	transition: color .2s ease;
+}
+
+.logo a:hover,
+.logo a:active {
+	color: var(--couleur-principale); /* #43fc15 */
+}
+
 /* BURGER MENU */
 header.active .logo,
 header.active .infos{
@@ -220,7 +229,7 @@ header.active .infos{
 
 .slider{
 	height: calc(100vh - 100px);
-	background-color: #bbe1bb; /* mon vert */
+	background-color: black;
 	overflow: hidden;
 	position:relative;
 	margin-left:-30px;
@@ -254,12 +263,12 @@ button.slick-prev.slick-arrow {
 button.slick-prev.slick-arrow:after {
 	content: "←";
 	display: block;
-	color: black !important;
+	color: white !important;
 	font-size: 32px;
 	font-weight: 250;
 	width: 40px;
 	height: 40px;
-	top: calc(40% - 20px);
+	top: calc(10% - 20px);
 	left: 30px;
 	position: absolute;
 	z-index: 1;
@@ -274,12 +283,12 @@ button.slick-next.slick-arrow {
 button.slick-next.slick-arrow:after {
 	content: "→";
 	display: block;
-	color: black !important;
+	color: white !important;
 	font-size: 32px;
 	font-weight: 250;
 	width: 40px;
 	height: 40px;
-	top: calc(40% - 20px);
+	top: calc(10% - 20px);
 	right: 30px;
 	position: absolute;
 	z-index: 1;
@@ -397,8 +406,13 @@ h2{
 	display: block;
 }
 
+.read-more:hover,
 .read-more.open {
 	color: #888888;
+}
+
+.read-more.open:hover {
+	color: black;
 }
 
 .project-intro{
