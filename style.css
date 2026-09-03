@@ -120,7 +120,7 @@ header > *{
 
 .logo a:hover,
 .logo a:active {
-	color: var(--couleur-principale); /* #43fc15 */
+	color: var(--couleur-principale);
 }
 
 /* BURGER MENU */
@@ -198,6 +198,15 @@ header.active .infos{
 	text-decoration:none;
 	font-size:var(--size-XXXL);
 	font-weight:600;
+}
+
+.overlay a{
+	transition: color .2s ease;
+}
+
+.overlay a:hover,
+.overlay a:active {
+	color: var(--couleur-principale);
 }
 
 /* survol → ouvrir menu */
