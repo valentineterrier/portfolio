@@ -247,10 +247,10 @@ header.active .infos{
 }
 
 .slider img{
-    height:80vh;
+    height:100%;
+	object-fit: cover;
     width:auto;
     display:block;
-    margin:auto;
 }
 
 .arrow{
