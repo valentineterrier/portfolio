@@ -238,23 +238,28 @@ header.active .infos{
 /* slider project */
 
 .slider{
-	padding: 0; !important
-    height: calc(100vh - 100px);
-    background-color: black;
+	padding: 0 !important;
+	background: black;
+	overflow: hidden;
 }
 
 .myslider {
 	height: 100%;
 }
 
-.slider img{
-    height: calc(100vh - 100px);
+.slider img {
     width: auto;
     display: block;
 	margin: 0 auto;
-	transform: scale(1.1);
 	position: relative;
 	top: 0;
+}
+
+.slick-slide img {
+	width: 100%;
+    height: calc(100vh - 100px);
+	object-fit: contain;
+	object-position: center;
 }
 
 .arrow{
