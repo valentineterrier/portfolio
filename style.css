@@ -497,6 +497,22 @@ h2{
 }
 
 /*///////////////////////////////////*/
+/*// ABOUT PAGE //////////////////*/
+.contact h3{
+	font-size: var(--size-XXXL);
+	margin-top: 5%;
+}
+
+.mail a{
+	font-size: var(--size-XXL);
+	text-decoration: underline;;
+	color:black;
+	display: block;
+	margin-top: 30px;
+}
+
+
+/*///////////////////////////////////*/
 /*// FOOTER //////////////////*/
 
 #contact{
