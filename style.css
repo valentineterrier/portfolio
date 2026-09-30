@@ -336,10 +336,32 @@ button.slick-next.slick-arrow {
 	gap:20px;
 }
 
+/* cadre de chaque projet */
+.project{
+	position:relative;
+	overflow:hidden;
+	aspect-ratio:4 / 3;
+}
+
+/* lien = toute la surface du projet */
+.project a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
 /* images */
 .project img{
 	width:100%;
+	height:100%;
 	display:block;
+	object-fit:cover;
+}
+
+/* zoom agenda */
+.agenda-image{
+	object-position:center;
+	transform:scale(1.15);
 }
 
 /* pages par project */
@@ -434,43 +456,47 @@ h2{
 	color: black;
 }
 
-.project-intro{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 80px;
-	row-gap: 50px;
-	margin: 100px 0;
+.project-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 50px;
+    margin: 100px 0;
 }
 
-.project-two-blocks{
-	grid-column: 1 / -1;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+/* GRANDE IMAGE */
+
+.project-image {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
 }
 
-.block{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
-.block img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
+
+/* DEUX IMAGES */
+
+.project-two {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.project-image{
-	grid-column: 1 / -1;
-	width: 100%;
-}
-
-.project-image img{
-	width: 100%;
-	display: block;
+.project-two img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /*///////////////////////////////////*/
