@@ -464,26 +464,22 @@ h2{
     margin: 100px 0;
 }
 
-/* GRANDE IMAGE */
-
+/* IMAGE UNIQUE */
 .project-image {
     grid-column: 1 / -1;
-    width: 100%;
-    height: 650px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .project-image img {
+    grid-column: 1;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
 }
 
-
 /* DEUX IMAGES */
-
 .project-two {
     grid-column: 1 / -1;
     display: grid;
