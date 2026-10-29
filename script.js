@@ -65,26 +65,17 @@ updateInfos();
 setInterval(updateInfos,1000);
 
 
-/* meun burger */
+/* menu burger */
 const burger = document.getElementById("burger");
 const overlay = document.getElementById("overlay");
 const header = document.getElementById("header");
 
-// OUVRIR
-	burger.addEventListener("mouseenter", function(){
-		console.log("mouse hover");
-		burger.classList.add("active");
-		overlay.classList.add("active");
-		header.classList.add("active");
-	});
-
-// FERMER
-	burger.addEventListener("click", function(){
-		console.log("mouse click!");
-		burger.classList.remove("active");
-		overlay.classList.remove("active");
-		header.classList.remove("active");
-	});
+// OUVRIR / FERMER AU CLIC
+burger.addEventListener("click", function () {
+	const isOpen = overlay.classList.toggle("active");
+	burger.classList.toggle("active", isOpen);
+	header.classList.toggle("active", isOpen);
+});
 
 
 /* read more/read less */
