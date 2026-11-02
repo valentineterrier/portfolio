@@ -491,6 +491,7 @@ h2{
 	display: grid;
 	grid-template-columns: 170px 700px;
 	column-gap: 70px;
+	row-gap: 1.5em; /* espace entre les deux paragraphes */
 	margin-top: 70px;
 	align-items: start;
 }
@@ -501,6 +502,7 @@ h2{
 }
 
 .about p{
+	grid-column: 2; /* les deux paragraphes vont dans la 2e colonne */
 	max-width: 700px;
 	font-size: var(--size-XL);
 	line-height: 1.45;
@@ -508,7 +510,7 @@ h2{
 }
 
 /*///////////////////////////////////*/
-/*// ABOUT PAGE //////////////////*/
+/*// CONTACT PAGE ////////////////*/
 .contact h3{
 	font-size: var(--size-XXXL);
 	margin-top: 5%;
