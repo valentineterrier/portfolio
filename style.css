@@ -580,7 +580,6 @@ h2{
 
 /*///////////////////////////////////*/
 /*// RESPONSIVE //////////////////*/
-/* À GARDER TOUT EN BAS DU FICHIER */
 
 /* hauteur d'écran correcte sur mobile (barre d'adresse du navigateur) */
 @supports (height: 100dvh){
@@ -649,11 +648,12 @@ h2{
 		object-fit: cover;
 	}
 
-	/* page Work : on garde 2 colonnes comme sur ordinateur */
+	/* page Work : on garde 2 colonnes, avec moins d'espace entre les vignettes */
 	#portfolio{
 		gap: 10px;
 	}
 
+	/* texte de l'overlay plus petit pour tenir dans les petites vignettes */
 	.overlay-project{
 		padding: 10px;
 	}
