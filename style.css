@@ -575,102 +575,126 @@ h2{
 }
 
 
+
+
+
 /*///////////////////////////////////*/
 /*// RESPONSIVE //////////////////*/
- 
+/* À GARDER TOUT EN BAS DU FICHIER */
+
 /* hauteur d'écran correcte sur mobile (barre d'adresse du navigateur) */
 @supports (height: 100dvh){
 	.page{ min-height: 100dvh; }
 	.overlay{ height: 100dvh; }
 	.slick-slide img{ height: calc(100dvh - 100px); }
 }
- 
+
 /* écrans tactiles : pas de curseur personnalisé */
 @media (hover: none){
 	body{ cursor: auto; }
 	.cursor-dot{ display: none; }
 }
- 
+
 /* ---------- TABLETTE (jusqu'à 900px) ---------- */
 @media (max-width: 900px){
 	:root{
-		--page-padding: 20px;
 		--size-XXXL: 64px;
 		--size-XXL: 32px;
 	}
- 
+
 	.project-intro{
 		grid-template-columns: 1fr;
 		margin-top: 60px;
 		row-gap: 30px;
 	}
- 
+
 	.about{
 		grid-template-columns: 1fr;
 		margin-top: 40px;
 	}
- 
+
 	.about p{
 		grid-column: 1;
 	}
- 
+
 	#contact{
 		margin-top: 120px;
 	}
 }
- 
+
 /* ---------- MOBILE (jusqu'à 600px) ---------- */
 @media (max-width: 600px){
+
 	:root{
 		--size-XXXL: 44px;
 		--size-XXL: 26px;
 		--size-XL: 20px;
 		--size-L: 18px;
 	}
- 
+
 	/* header : logo à gauche, burger à droite */
 	header{
 		grid-template-columns: 1fr auto;
 		margin-bottom: 30px;
 	}
- 
+
 	.infos{
 		display: none;
 	}
- 
-	/* page Work : une seule colonne */
-	#portfolio{
-		grid-template-columns: 1fr;
+
+	/* slider : image en format 4:5, pleine largeur */
+	.slick-slide img{
+		height: auto;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
 	}
- 
+
+	/* page Work : on garde 2 colonnes comme sur ordinateur */
+	#portfolio{
+		gap: 10px;
+	}
+
+	.overlay-project{
+		padding: 10px;
+	}
+
+	.overlay-project h3{
+		font-size: var(--size-S);
+		margin-bottom: 4px;
+	}
+
+	.overlay-project p{
+		font-size: 11px;
+	}
+
 	/* pages projets */
 	.project-image,
 	.project-two{
 		grid-template-columns: 1fr;
 	}
- 
+
 	.project-two img{
 		height: 300px;
 	}
- 
+
 	.project-intro{
 		margin-top: 40px;
 	}
- 
+
 	/* contact */
 	.contact h3{
 		margin-top: 10%;
 	}
- 
+
 	/* footer : 2 colonnes, texte plus petit */
 	.footer-inner{
-		grid-template-columns: auto 1fr; /* la colonne de gauche prend la place de son texte */
+		grid-template-columns: auto 1fr;
 		column-gap: 20px;
 	}
 
 	.footer-name{
 		font-size: 12px;
-		white-space: nowrap; /* "Portfolio Valentine Terrier" reste sur une seule ligne */
+		white-space: nowrap;
 	}
 
 	.footer-right{
@@ -687,5 +711,7 @@ h2{
 	}
 
 	.footer-links a{
-		font-size: var(--size-S); /* 13px */
+		font-size: var(--size-S);
 	}
+
+} /* fin du bloc mobile */
