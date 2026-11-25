@@ -620,7 +620,6 @@ h2{
 }
  
 /* ---------- MOBILE (jusqu'à 600px) ---------- */
-/* ---------- MOBILE (jusqu'à 600px) ---------- */
 @media (max-width: 600px){
 	:root{
 		--size-XXXL: 44px;
@@ -628,62 +627,58 @@ h2{
 		--size-XL: 20px;
 		--size-L: 18px;
 	}
-
+ 
 	/* header : logo à gauche, burger à droite */
 	header{
 		grid-template-columns: 1fr auto;
 		margin-bottom: 30px;
 	}
-
+ 
 	.infos{
 		display: none;
 	}
-
-	/* page Work : on garde 2 colonnes, avec moins d'espace entre les vignettes */
+ 
+	/* page Work : une seule colonne */
 	#portfolio{
-		gap: 10px;
+		grid-template-columns: 1fr;
 	}
-
-	/* texte de l'overlay plus petit pour tenir dans les petites vignettes */
-	.overlay-project{
-		padding: 10px;
-	}
-
-	.overlay-project h3{
-		font-size: var(--size-S);
-		margin-bottom: 4px;
-	}
-
-	.overlay-project p{
-		font-size: 11px;
-	}
-
+ 
 	/* pages projets */
 	.project-image,
 	.project-two{
 		grid-template-columns: 1fr;
 	}
-
+ 
 	.project-two img{
 		height: 300px;
 	}
-
+ 
 	.project-intro{
 		margin-top: 40px;
 	}
-
+ 
 	/* contact */
 	.contact h3{
 		margin-top: 10%;
 	}
-
-	/* footer : on garde 2 colonnes comme sur ordinateur */
+ 
+	/* footer : 2 colonnes, texte plus petit */
 	.footer-inner{
-		column-gap: 15px;
+		grid-template-columns: auto 1fr; /* la colonne de gauche prend la place de son texte */
+		column-gap: 20px;
+	}
+
+	.footer-name{
+		font-size: 12px;
+		white-space: nowrap; /* "Portfolio Valentine Terrier" reste sur une seule ligne */
 	}
 
 	.footer-right{
 		gap: 20px;
+	}
+
+	.footer-right h3{
+		font-size: 12px;
 	}
 
 	.footer-links{
@@ -692,10 +687,5 @@ h2{
 	}
 
 	.footer-links a{
-		font-size: var(--size-M);
+		font-size: var(--size-S); /* 13px */
 	}
-
-	#contact{
-		margin-top: 80px;
-	}
-}
