@@ -648,39 +648,25 @@ h2{
 		object-fit: cover;
 	}
 
-	/* page Work : on garde 2 colonnes, avec moins d'espace entre les vignettes */
+	/* page Work : une seule colonne */
 	#portfolio{
-		gap: 10px;
+		grid-template-columns: 1fr;
 	}
-
-	/* texte de l'overlay plus petit pour tenir dans les petites vignettes */
-	.overlay-project{
-		padding: 10px;
-	}
-
-	.overlay-project h3{
-		font-size: var(--size-S);
-		margin-bottom: 4px;
-	}
-
-	.overlay-project p{
-		font-size: 11px;
-	}
-
+ 
 	/* pages projets */
 	.project-image,
 	.project-two{
 		grid-template-columns: 1fr;
 	}
-
+ 
 	.project-two img{
 		height: 300px;
 	}
-
+ 
 	.project-intro{
 		margin-top: 40px;
 	}
-
+ 
 	/* contact */
 	.contact h3{
 		margin-top: 10%;
